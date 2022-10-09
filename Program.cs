@@ -10,6 +10,14 @@ namespace oop_4
 {
      class Program
     {
+        enum Deskstop { 
+        monitor,
+        keyboard,
+        mouse,
+        computerCase,
+        microphone,
+        speaker
+        }
         static void Main(string[] args)
         {
             Technique technique = new MyPrinter("Принтер");
@@ -48,6 +56,9 @@ namespace oop_4
                 printer1.IAmPrinting( products[i]);
 
             }
+            Iron iron = new Iron();
+            iron.model = "Philips";
+            iron.instruction();
         }
     }
 }

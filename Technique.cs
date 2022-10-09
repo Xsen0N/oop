@@ -153,7 +153,7 @@ namespace oop_4
                 return $"Type is {GetType}; Id: {ID}; Category:{calculate}; Power {power}; Areas_of_use: {Areas_of_use}";
             }
         }
-        sealed class Tablet : Computer
+        sealed partial class Tablet : Computer
         {
             int ID;
             string calculate = "And I can calculate";
@@ -170,19 +170,18 @@ namespace oop_4
             {
                 Console.WriteLine(calculate);
             }
-            public override int GetHashCode()
-            {
-                return base.GetHashCode()+1000;
-            }
-            public override bool Equals(object? obj)
-            {
-                if (obj is Computer computer) return true;
-                return false;
-            }
             public override string ToString()
             {
                 return $"Type is {GetType}; Id: {ID}; Category:{calculate}; Power {power}; Areas_of_use: {Areas_of_use}"; 
             }
+        }
+        public struct Iron {
+        public string model { get; set; }
+        public double power { get; set; }
+            public void instruction() {
+                Console.WriteLine("Everybody know how to use an iron");
+            }
+
         }
     }
 }
