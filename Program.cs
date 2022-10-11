@@ -20,11 +20,11 @@ namespace oop_4
         }
         static void Main(string[] args)
         {
-            Technique technique = new MyPrinter("Принтер");
-            Technique technique1 = new Computer("Компьютер");
-            IProduct product = new Scanner();
-            Scanner scanner = new Scanner();
-            Computer computer = new Workstation("Рабочая станция");
+            Technique technique = new MyPrinter("Принтер", cost: 1500, 3);
+            Technique technique1 = new Computer("Компьютер", 20000, 36);
+            IProduct product = new Scanner("Сканер", lifespan: 6, cost: 600);
+            Scanner scanner = new Scanner("Сканер",980, 3 );
+            Computer computer = new Workstation("Рабочая станция", 78000, 200 );
             technique.Power();
             ((IProduct)product).Quality();
             technique.Quality();
@@ -38,7 +38,7 @@ namespace oop_4
             {
                 Console.WriteLine("Преобразование прошло удачно");
             }
-            MyPrinter printer = new MyPrinter("Принтер хороший");
+            MyPrinter printer = new MyPrinter("Принтер", cost: 8900, 10);
             if (printer is Technique )
             {
                 Console.WriteLine(printer.Name);
@@ -57,8 +57,19 @@ namespace oop_4
 
             }
             Iron iron = new Iron();
+            Tablet tablet = new Tablet();
             iron.model = "Philips";
             iron.instruction();
+            //----------------------------------------//
+            Laboratory laboratories = new Laboratory(new List<object>( ){ technique1, technique, printer, computer });
+            Console.WriteLine("Введите срок службы ");
+            int limit = Convert.ToInt32(Console.ReadLine());
+            
+            Controler.FindLife(laboratories, limit);
+            Console.WriteLine();
+            Controler.CountTech(laboratories);
+            Controler.Sort(laboratories);
         }
+
     }
 }
