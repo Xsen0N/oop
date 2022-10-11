@@ -9,6 +9,7 @@ namespace oop_4
      interface IProduct
     {
         string Name { get { return "Product"; } }
+        public int lifespan { get; set; }
         string category { get; set ;}
         double ProductCost(double cost);
         void ProductId();

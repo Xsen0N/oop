@@ -13,14 +13,24 @@ namespace oop_4
     public abstract class Technique
     {
         int ID;
+        public string name;
+        public int lifespan;
+        public double cost;
+        public string category
+        {
+            get => "Техника";
+            set => category = value;
+        }
         public abstract void Power();
         public abstract void Quality();
         public abstract string Areas_of_use { get;  }
         public string Name { get; }
         // конструктор абстрактного класса Technique
-        public Technique(string name)
+        public Technique(string name, double cost, int lifespan)
         {
             Name = name;
+            this.cost = cost;
+            this.lifespan = lifespan;
             ID = GetHashCode();
         }
     }
@@ -29,7 +39,8 @@ namespace oop_4
         int ID;
         protected const string power = "50 W/hr.";
         protected string quality = "Low % of defects";
-        public MyPrinter(string name) : base(name) {
+        public int lifespan { get; set; }
+        public MyPrinter(string name, double cost, int lifespan) : base(name, cost, lifespan) {
             ID = GetHashCode();
         }
         public override void Power()
@@ -60,16 +71,27 @@ namespace oop_4
             ID = GetHashCode();
             Console.WriteLine(ID);
         }
-        public string category
+       new public string category
         {
-            get => "Сканер";
+            get => "Принтер";
             set => category = value;
         }
         public override string ToString() => $"Type is {GetType}; Id: {ID}; Category:{category};Areas_of_use: {Areas_of_use}; Quality :{quality}; Power {power}";
         public class Scanner : IProduct
         {
             int ID;
+            public string name { get; set; }
+            public int lifespan { get; set; }
+            public double cost { get; set; }
             protected string quality = "Free of defects";
+            public Scanner(string name, double cost, int lifespan)
+            {
+                this.name = name;
+                this.cost = cost;
+                this.lifespan = lifespan;
+                ID = GetHashCode();
+            }
+
             public void Quality()
             {
                 Console.WriteLine("Free of defects");
@@ -95,7 +117,7 @@ namespace oop_4
             }
             public override string ToString()
             {
-                return $"Type is {GetType};Name: {Name}; ID :{ProductId}; Category:{category};Quality: {quality}; ";
+                return $"Type is {GetType};Name: {Name}; ID :{ID}; Category:{category};Quality: {quality}; ";
             }
         }
         public class Computer : Technique
@@ -104,7 +126,7 @@ namespace oop_4
             protected const string power = "2000 W/hr.";
             string calculate = "I can count";
             string quality = "Low % of defects";
-            public Computer(string name) : base(name) {
+            public Computer(string name, double cost, int lifespan) : base(name, cost, lifespan) {
                 ID = GetHashCode();
             }
             public override void Power()
@@ -118,6 +140,11 @@ namespace oop_4
             public override void Quality()
             {
                 Console.WriteLine(quality);
+            }
+
+           new public string category
+            {
+                get => "Компьютер";
             }
             public override string Areas_of_use
             {
@@ -136,7 +163,8 @@ namespace oop_4
         {
             int ID;
             string calculate = "I can count too";
-            public Workstation(string name) : base(name) {
+            public Workstation(string name, double cost, int lifespan) : base(name, cost, lifespan)
+            {
                 ID = GetHashCode();
             }
             override public void Calculate()
@@ -148,6 +176,10 @@ namespace oop_4
                 int ID = GetHashCode();
                 Console.WriteLine($"Workstation ID: {ID}");
             }
+            new public string category
+            {
+                get => "Рабочая станция";
+            }
             public override string ToString()
             {
                 return $"Type is {GetType}; Id: {ID}; Category:{calculate}; Power {power}; Areas_of_use: {Areas_of_use}";
@@ -156,14 +188,21 @@ namespace oop_4
         sealed partial class Tablet : Computer
         {
             int ID;
+            new  string name { get; set; }
+            new int lifespan { get; set; }
+            new double cost { get; set; }
             string calculate = "And I can calculate";
-
+            new public string category
+            {
+                get => "Планшет";
+            }
             override public void id()
             {
                 int ID = GetHashCode();
                 Console.WriteLine($"Tablet ID: {ID}");
             }
-            public Tablet(string name) : base(name) {
+            public Tablet(string name, double cost, int lifespan) : base(name, cost, lifespan)
+            {
                 ID = GetHashCode();
             }
             override public void Calculate()
