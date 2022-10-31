@@ -80,8 +80,17 @@ namespace oop_4
         public class Scanner : IProduct
         {
             int ID;
-            public string name { get; set; }
-            public int lifespan { get; set; }
+            public string name;
+            public int Lifespan;
+            public int lifespan {
+                get { return Lifespan; }
+                set
+                {
+                    if (Lifespan >= 100)
+                        throw new Lies("Это ложь");
+                    else Lifespan = value;
+                }
+            }
             public double cost { get; set; }
             protected string quality = "Free of defects";
             public Scanner(string name, double cost, int lifespan)
@@ -101,17 +110,31 @@ namespace oop_4
                 get => "Сканер";
                 set => category = value;
             }
-            public string Name => "Scanner";
+            public string Name {
+                get => name;
+                set
+                {
+                    if (value == null)
+                        throw new NullElemNameExceptoin("Не указано название техники!!!");
+                    else if(Name.Length == 0 || Name == "Принтер")
+                    {
+                        throw new NameExceptoin("НЕ ВЕРНОЕ ИМЯ111!", Name);
+                    }
+                }
+            }
 
             public void ProductId()
             {
                 ID = GetHashCode();
                 Console.WriteLine(ID);
             }
-            double IProduct.ProductCost(double cost)
+             double IProduct.ProductCost(double cost)
             {
                 if (cost < 500)
                     cost = cost + cost * 0.2;
+                if (cost <= 0) {
+                    throw new CostExceptoin("К сожалению, цена не может быть отрицательной и 0 :(", cost);
+                }
                 else cost = -100;
                 return cost;
             }
@@ -190,7 +213,16 @@ namespace oop_4
             int ID;
             new  string name { get; set; }
             new int lifespan { get; set; }
-            new double cost { get; set; }
+            double Cost;
+            public double CostEl
+            {
+                get { return Cost; }
+
+                set {
+                    if (value > 10000) throw new CostExceptoin("И СТОЛЬКО стоит планшет!!! Сбить цену!", cost);
+                    Cost = value;
+                }
+            }
             string calculate = "And I can calculate";
             new public string category
             {
@@ -215,7 +247,35 @@ namespace oop_4
             }
         }
         public struct Iron {
-        public string model { get; set; }
+             string Model;
+            double cost;
+            public double CostEl
+            {
+                get { return cost; }
+
+                set
+                {
+                    if (value > 10000) throw new CostExceptoin("И СТОЛЬКО стоит Iron!!! Сбить цену!", cost);
+                    cost = value;
+                }
+            }
+            public string model {
+                get { return Model; }
+                set {
+                   
+                    Debug.Assert(value == "Samsuni");
+                    try
+                    {              
+                        throw new Lies("Такой модели нет");
+                    }
+                    catch (Lies e)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                    Model = value;
+                    
+                     }
+            }
         public double power { get; set; }
             public void instruction() {
                 Console.WriteLine("Everybody know how to use an iron");
