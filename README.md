@@ -1,0 +1,1 @@
+This repository contains lab work on the subject oop, which covered the following topics: basics of C#, working with exceptions, multithreading, delegates and events, critical sections, asynchronous programming, design patterns, building uml diagrams, working with winForm, wpf
