@@ -1,0 +1,11 @@
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\Lab4.csproj.AssemblyReference.cache
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\Resources\darkTheme.baml
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\Resources\langEN.baml
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\Resources\langRU.baml
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\Resources\lightTheme.baml
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\Resources\mintTheme.baml
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\NewPage.g.cs
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\App.g.cs
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\Lab4_MarkupCompile.cache
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\Lab4_MarkupCompile.lref
+D:\additional\ооп\lab4_5\Lab4\Lab4\obj\Debug\net6.0-windows\MainWindow.g.cs

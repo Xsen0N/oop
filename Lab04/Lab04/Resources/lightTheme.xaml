@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="WindowStyle" TargetType="Window">
+        <Setter Property="Background" Value="#80E0FF" />
+    </Style>
+    <Style x:Key="ListBoxStyle" TargetType="ListBox">
+        <Setter Property="Background" Value="#80A0FF" />
+    </Style>
+    <Style x:Key="StackPanelStyle" TargetType="StackPanel">
+        <Setter Property="Background" Value="#FFF080" />
+    </Style>
+    <Style x:Key="TabItemStye" TargetType="TabItem">
+        <Setter Property="Background" Value="#8080FF" />
+    </Style>
+    <Style x:Key="TextBoxStyle" TargetType="TextBox">
+        <Setter Property="Background" Value="White" />
+    </Style>
+    <Style x:Key="ButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="#FFF080" />
+    </Style>
+    <Style x:Key="DataGridStyle" TargetType="DataGridCell">
+        <Setter Property="Background" Value="#80E0FF" />
+    </Style>
+    <Style x:Key="UniformGridStyle" TargetType="UniformGrid">
+        <Setter Property="Background" Value="#80A0FF" />
+    </Style>
+</ResourceDictionary>

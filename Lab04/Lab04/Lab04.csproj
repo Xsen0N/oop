@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\img1.jpg" />
+    <None Remove="img\img2.jpg" />
+    <None Remove="img\img3.jpg" />
+    <None Remove="img\img4.jpg" />
+    <None Remove="img\img5.jpg" />
+    <None Remove="img\img6.jpg" />
+    <None Remove="items.json" />
+    <None Remove="Resources\arrow.cur" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GuiLabs.Undo" Version="1.0.2" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RelayCommand" Version="1.0.2" />
+    <PackageReference Include="System.Windows.Interactivity.WPF" Version="2.0.20525" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\img1.jpg" />
+    <Resource Include="img\img2.jpg" />
+    <Resource Include="img\img3.jpg" />
+    <Resource Include="img\img4.jpg" />
+    <Resource Include="img\img5.jpg" />
+    <Resource Include="img\img6.jpg" />
+    <Resource Include="items.json" />
+    <Resource Include="Resources\arrow.cur" />
+  </ItemGroup>
+
+</Project>

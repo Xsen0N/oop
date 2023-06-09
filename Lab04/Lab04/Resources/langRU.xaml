@@ -1,0 +1,35 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="shopTitle">Домашний</v:String>
+    <v:String x:Key="Tab1">Список домов</v:String>
+    <v:String x:Key="Tab2">Таблица домов</v:String>
+    <v:String x:Key="Tab3">Настройки</v:String>
+
+    <v:String x:Key="AddItemButton">Добавить</v:String> 
+    <v:String x:Key="DeleteItemButton">Удалить по ID</v:String>
+    <v:String x:Key="AddImageButton">Загрузить изображение</v:String>
+    <v:String x:Key="ClearFormButton">Очистить форму</v:String>
+	<v:String x:Key="SeachLabel">Поиск:</v:String>
+
+    <v:String x:Key="Id">№</v:String>
+    <v:String x:Key="CityLabel">Город</v:String>
+    <v:String x:Key="PriceLabel">Цена</v:String>
+    <v:String x:Key="BedsLabel">Кол-во спален</v:String>
+    <v:String x:Key="MetrLabel">Метраж</v:String>
+    <v:String x:Key="ImagePathLabel">Путь к изображению</v:String>
+    <v:String x:Key="DescLabel">Описание</v:String>
+
+    <v:String x:Key="LoadDataFromFile">Загрузить из файла</v:String>
+    <v:String x:Key="SaveDataToFile">Сохранить данные в файл</v:String>
+    
+    <v:String x:Key="SelectLangLabel">Язык:</v:String>
+    <v:String x:Key="LangRu">Русский</v:String>
+    <v:String x:Key="LangEn">Английский</v:String>
+
+    <v:String x:Key="SelectStyleLabel">Тема:</v:String>
+    <v:String x:Key="StyleLight">Светлая тема</v:String>
+    <v:String x:Key="StyleDark">Сочная тема</v:String>
+</ResourceDictionary>

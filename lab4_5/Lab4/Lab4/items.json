@@ -1,0 +1,62 @@
+[
+    {
+      "ID ": 90066,
+      "cost": 2099000,
+      "beds": 3,
+      "baths":  2,
+      "metrage": 1871,
+      "city": "Los Angeles",
+      "Description": "A cozy bungalow located in a quiet residential neighborhood, featuring 3 bedrooms, a spacious living room, and a fully updated kitchen. The backyard includes a covered patio and a fenced-in area perfect for gardening.",
+      "ImagePath": "../img/img1.jpg"
+    },
+  {
+    "ID ": 90048,
+    "cost": 4699999,
+    "beds": 6,
+    "baths": 7,
+    "metrage": 4794,
+    "city": "San Diego",
+    "Description": "A Mediterranean-style villa with a private pool and outdoor kitchen, offering the ultimate in luxury living. The home boasts 6 bedrooms, a gourmet kitchen with high-end appliances, and a grand foyer.",
+    "ImagePath": "../img/img2.jpg"
+  },
+  {
+    "ID ": 90067,
+    "cost": 2995000,
+    "beds": 5,
+    "baths": 4,
+    "metrage": 3407,
+    "city": "Los Angeles",
+    "Description": "A charming colonial-style home with a wrap-around porch, located in a historic district. The home features 5 bedrooms, a renovated kitchen with stainless steel appliances, and a fenced-in backyard.",
+    "ImagePath": "../img/img3.jpg"
+  },
+  {
+    "ID ": 90078,
+    "cost": 2495000,
+    "beds": 5,
+    "baths": 4,
+    "metrage": 2323,
+    "city": "Los Angeles",
+    "Description": "A spacious contemporary-style home with high ceilings and an abundance of natural light. The home offers 5 bedrooms, a gourmet kitchen with a large island, and a finished basement with a home theater.",
+    "ImagePath": "../img/img4.jpg"
+  },
+  {
+    "ID ": 90147,
+    "cost": 2495000,
+    "beds": 3,
+    "baths": 2,
+    "metrage": 1758,
+    "city": "San Francisco",
+    "Description": "A modern three-story townhouse with sleek finishes, located in a bustling downtown area. The home boasts three bedrooms, a rooftop terrace with city views, and an open-concept living and dining area.",
+    "ImagePath": "../img/img5.jpg"
+  },
+  {
+    "ID ": 90078,
+    "cost": 3595000,
+    "beds": 3,
+    "baths": 24,
+    "metrage": 2614,
+    "city": "San Francisco",
+    "Description": "A sleek and modern condominium with floor-to-ceiling windows, offering stunning views of the city skyline. The unit features 3 bedrooms, a contemporary kitchen, and a balcony.",
+    "ImagePath": "../img/img6.jpg"
+  }
+]
